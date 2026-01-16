@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-size: 15px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: #312e2c;
+    font-family: Young Serif,serif;
+}
+
+h2 {
+    color: #5f4a43;
+}
+
+p,
+table,
+ol,
+ul,
+h2 {
+    font-family: Sans-serif;
+    line-height: 2.0;
+    color: #4a403a;
+}
+
+ol li::marker {
+    font-weight: bold;
+    color: #5f4a43;
+}
+
+.Preparation {
+    background-color: #fff7fb;
+}
+
+h2.Preparation-title {
+    color: #7a284e;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td,
+th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+td.GM {
+    font-weight: bold;
+    color: #7a284e;
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        background-color: rgb(243, 229, 215);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 0;
+    }
+
+    .contenedor {
+        background-color: white;
+        width: 700px;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 40px;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .Preparation {
+        padding: 4px;
+    }
+
+    p,
+    table,
+    ol,
+    ul {
+        line-height: 1.5;
+    }
+
+}

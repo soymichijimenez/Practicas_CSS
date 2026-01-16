@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.part1{
+    background: linear-gradient(rgb(72, 72, 198), blue);
+    border-radius: 0px 0px 0px 0px;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+.button1{
+    background: linear-gradient(rgb(57, 57, 153), rgb(57, 57, 224));
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 110px;
+    height: 110px;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.part2{
+    display: flex;
+    background-color: #ebebeb;
+    padding: 15px;
+    border-radius: 5px;
+    color: black;
+}
