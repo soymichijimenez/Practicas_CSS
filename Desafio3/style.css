@@ -1,0 +1,96 @@
+    body {
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        background-color: hsl(186, 40%, 91%);
+    }
+
+    #contenedor-principal {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        max-width: 375px;
+        margin: 50px auto;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        font-size: 11px;
+        line-height: 1.9;
+    }
+
+    .item1 {
+        background-color: white;
+        padding: 12px;
+    }
+
+    h1 {
+        color: hsl(179, 62%, 43%);
+        font-size: 20px;
+    }
+
+    .item1 h2 {
+        color: hsl(71, 73%, 54%);
+        font-size: 20px;
+    }
+
+    .item1 p {
+        color: hsl(204, 4%, 64%);
+    }
+
+    .item2 {
+        background-color: #2ab2af;
+        color: white;
+        padding: 12px;
+    }
+
+    .precio {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .duracion {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    button {
+        background-color: #c0df34;
+        border: none;
+        width: 100%;
+        padding: 15px;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    .item3 {
+        background-color: #4abebd;
+        color: white;
+        padding: 12px;
+    }
+
+    ol {
+        color: rgba(255, 255, 255, 0.8);
+        list-style-type: none;
+    }
+    @media screen and (min-width: 769px) {
+        #contenedor-principal{
+            display: grid;
+            grid-template-areas: 
+            "item1 item1"
+            "item2 item3";
+            height: 500px;
+            max-width: 500px;
+        }
+        .item1 {
+            grid-area: item1;
+        }
+        .item2 {
+            grid-area: item2;
+        }
+        .item3 {
+            grid-area: item3;
+        }
+    }
