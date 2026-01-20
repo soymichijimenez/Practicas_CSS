@@ -1,0 +1,148 @@
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.div-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    line-height: 1;
+    font-size: 40px;
+}
+
+.sub {
+    color: hsl(303, 20%, 64%);
+    line-height: 1.3;
+}
+
+.rated {
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    color: hsl(300, 43%, 22%);
+}
+
+.star1,
+.star2,
+.star3 {
+    background-color: hsl(300, 24%, 96%);
+    padding: 10px;
+    margin: 7px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+img {
+    max-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.name,
+h3 {
+    color: white;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.name,
+h4 {
+    color: #ee68a4;
+    font-size: 14px;
+    margin: 0;
+}
+
+.name,
+p {
+    color: rgb(213, 208, 208);
+}
+
+.comentario1,
+.comentario2,
+.comentario3 {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 7px;
+    padding: 20px;
+    margin: 10px;
+}
+
+@media screen and (min-width:769px) {
+    .div-container {
+        max-width: 1110px;
+        margin: 80px auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main {
+        margin-bottom: 50px;
+    }
+
+    header {
+        text-align: left;
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .rated {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .star1,
+    .star2,
+    .star3 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 450px;
+        padding: 15px 30px;
+    }
+
+    .star1 {
+        align-self: flex-end;
+    }
+
+    .star2 {
+        align-self: center;
+    }
+
+    .star3 {
+        align-self: flex-start;
+    }
+}
+
+.comment-container {
+    display: flex;
+}
