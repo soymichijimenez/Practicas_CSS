@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: hsla(0, 0%, 0%, 0.664);
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    font-size: 0.7rem;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 10px 0;
+}
+
+header button {
+    background-color: white;
+    color: hsl(322, 100%, 66%);
+    border: 1px solid hsl(322, 100%, 66%);
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header button:hover {
+    background-color: hsl(322, 100%, 90%);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+.titulo button {
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(322, 100%, 66%);
+    background-color: hsl(322, 100%, 66%);
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mockup {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.primer-seccion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 0.5cm;
+}
+
+.primer-seccion h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.segunda-seccion {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.tercera-seccion {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.cuarta-seccion {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 60px auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 90px 0;
+}
+
+article button {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(192, 100%, 9%);
+    border-top-left-radius: 30% 100px;
+    border-top-right-radius: 38% 100px;
+    padding-top: 100px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.right {
+    text-align: left;
+    font-size: 0.7rem;
+    padding: 25px 30px;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px auto;
+    width: 90%;
+}
+
+.boton-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+footer button {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    text-align: left;
+    font-size: 0.7rem;
+    padding: 20px 25px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+footer img {
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width:768px) {
+    .contenedor {
+        font-size: 1rem;
+    }
+    header {
+        width: 100%;
+        max-width: 1350px;
+        margin: 0 auto 40px auto;
+        padding: 10px 0;
+    }
+
+    .titulo {
+        width: 90%;
+    }
+
+    .titulo button {
+        width: 300px;
+        height: 50px;
+        font-size: 1.rem;
+    }
+
+    .primer-seccion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        line-height: 0.7cm;
+        gap: 200px;
+        margin: 90px auto;
+    }
+
+    .primer-seccion h2 {
+        font-size: 2.5rem;
+    }
+
+    #mockup {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .segunda-seccion {
+        width: 60%;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: left;
+        gap: 50px;
+    }
+
+    .tercera-seccion {
+        width: 60%;
+        flex-direction: row;
+        text-align: left;
+        gap: 50px;
+    }
+
+    .cuarta-seccion {
+        width: 60%;
+        flex-direction: row-reverse;
+        text-align: left;
+        gap: 50px;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        border-top-left-radius: 30% 100px;
+        border-top-right-radius: 38% 100px;
+        text-align: left;
+    }
+
+    .right {
+        font-size: 1.rem;
+        width: 30%;
+    }
+
+    footer input[type="email"] {
+        width: 50%;
+    }
+    .boton-email{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        font-size: 1.rem;
+        width: 20%;
+    }
+}
