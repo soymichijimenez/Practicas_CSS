@@ -1,0 +1,171 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap');
+ body{
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    color: hsl(210, 10%, 33%);
+ }
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+h1, h2 {
+    font-weight: 600;
+    font-size: 23px;
+    color: hsl(210, 10%, 23%);
+}
+p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    background-image: url(./image/bg-header-mobile.png);
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.boton1{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 600;
+    box-shadow: 0px 4px 6px hsla(180, 18%, 38%, 0.4);
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.boton2{
+    background-color: rgb(125, 125, 207);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px hsla(180, 18%, 38%, 0.4);
+    cursor: pointer;
+    width: 80%;
+}
+img{
+    max-width: 100%;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+article img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+.articulo3 img{
+    width: 18%;
+}
+.articulo4 img{
+width: 50%;
+}
+.articulo5 button{
+    width: 250px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(210, 5%, 78%, 0.181);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+footer .iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    width: 80px;
+}
+footer img{
+    width: 50px;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;;
+}
+a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+@media screen and (min-width: 768px) {
+    .logo {
+        background-image: url(./image/bg-header-desktop.png);
+        min-height: 50vh;
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    .boton1, .boton2{
+        width: 200px;
+    }
+    .contenedor-text-img{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px 0;
+        padding: 0;
+    }
+    .texto-articulo1{
+        text-align: left;
+        width: 60%;
+    }
+    .img-computer{
+        margin: 0;
+        width: 40%;
+    }
+    .articulo1 img{
+        width: 70%;
+    }
+    .articulo3, .articulo4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+    nav{
+        flex-direction: row;
+        gap: 30px;
+    }
+}
